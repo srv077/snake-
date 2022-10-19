@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <main id="front">
+        <div id="name">
+            <div class="empty"></div>
+            <div id="name-container">
+                <div id="svg-container"><img id="svg" src="https://www.svgrepo.com/show/33094/snake.svg"></div>
+                <div id="rname"><h1 style="font-size: 5vh; ">nake</h1></div>
+            </div>
+            <div class="empty"></div>
+        </div>
+        <div id="pic">
+            <div id="pic-box">
+                <div id="play" onclick="changedisplay()">
+                     Play
+                </div>
+            </div>
+        </div>
+        <div id="infos">
+            <div class="infos" id="settings">Settings</div>
+            <div class="infos" id="about">About</div>
+            <div class="infos" id="contact">Contact</div>
+            <div class="infos" id="help">Help</div>
+        </div>
+    </main>    
+    <main id="full">
+        <canvas id="game" width="500%" height="500%">
+        </canvas>
+        <div id="info">
+            <div id="scoreboard">
+                0
+            </div>
+            <div id="buttons">
+                <button id="reset" type="button" class="button">Reset</button>
+                <button id="back" type="button" class="button" onclick="stopgame()">back</button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

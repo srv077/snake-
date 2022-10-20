@@ -3,6 +3,7 @@ function changedisplay(){
     document.getElementById("full").style.display="flex";
 }
 function stopgame(){
+    document.querySelector("#reset").innerHTML="Start";
     score=0;
     scoreboard.textContent=score;
     clearBoard();
@@ -91,6 +92,7 @@ function showSnake(){
     })
 }
 function resetGame() {
+    document.querySelector("#reset").innerHTML="Reset";
     snake =[
         {x:unitsize*2,y:0},
         {x:unitsize*1,y:0},

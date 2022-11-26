@@ -1,4 +1,5 @@
 function changedisplay(){
+    clearBoard();
     document.getElementById("front").style.display="none";
     document.getElementById("full").style.display="flex";
 }
@@ -6,6 +7,7 @@ function stopgame(){
     document.querySelector("#reset").innerHTML="Start";
     score=0;
     scoreboard.textContent=score;
+    displayGameOver();
     clearBoard();
     document.getElementById("front").style.display="grid";
     document.getElementById("full").style.display="none";

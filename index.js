@@ -163,6 +163,7 @@ function checkGameOver(){
     }
 }
 function displayGameOver(){
+    
     ctx.font ="90px Arial";
     ctx.fillStyle = "black";
     ctx.strokeStyle = "red";

@@ -8,6 +8,10 @@ body{
     display:grid;
     grid-template-rows: 30% 60% 10%;
 }
+#full{
+    width:100vw;
+    height: 100vh;
+}
 #name{
     width:80%;
     margin-left:10%;
@@ -100,9 +104,7 @@ body{
     cursor: pointer;
 }
 #full{
-    width:100vw;
-    height: 100vh;
-    background-color: #95D600;
+    background-color: snow;
     display: none;
     justify-content: center;
     align-items: center;
@@ -115,7 +117,7 @@ body{
 #scoreboard{
     display: flex;
     height: 10vh;
-    color:white;
+    color:black;
     justify-content:center;
     align-items: center;
     font-size:350%;

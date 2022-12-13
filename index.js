@@ -94,13 +94,13 @@ function showSnake(){
     })
 }
 function resetGame() {
+
     document.querySelector("#reset").innerHTML="Reset";
     snake =[
         {x:unitsize*2,y:0},
         {x:unitsize*1,y:0},
         {x:0,y:0}
     ];
-    xvelocity = 0;
     xvelocity = unitsize;
     yvelocity = 0;
     score = 0;
@@ -109,7 +109,6 @@ function resetGame() {
 
 function changeDirection(event){
     const direction = event.keyCode;
-    console.log(direction)
     const LEFT =37;
     const RIGHT =39;
     const UP =40;
